@@ -1,0 +1,70 @@
+/**
+ * Feed AdSense `<li>` — keep OUT of MVP story/grid/float semantics (those break narrow mobile slots).
+ */
+
+ul.infinite-content {
+	overflow: visible;
+}
+
+ul.infinite-content > li.vdn-home-feed-ad,
+ul.infinite-content > li.vdn-home-feed-ad.vdn-home-feed-ad--col,
+ul.infinite-content > li.vdn-home-feed-ad.vdn-home-feed-ad--row {
+	display: block;
+	float: none !important;
+	clear: both !important;
+	width: 100% !important;
+	max-width: 100%;
+	list-style: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding-left: clamp(12px, 3vw, 20px);
+	padding-right: clamp(12px, 3vw, 20px);
+	overflow: visible;
+	position: relative;
+	z-index: 2;
+	isolation: isolate;
+	-webkit-transform: translateZ(0);
+	flex: 0 0 100%;
+	flex-basis: 100%;
+	grid-column: 1 / -1;
+}
+
+.vdn-home-feed-ad--col {
+	max-width: 100%;
+}
+
+.vdn-home-feed-ad .vdn-home-feed-adfusion-google {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	overflow: visible;
+}
+
+.vdn-home-feed-ad .vdn-home-feed-adfusion-google ins.adsbygoogle {
+	display: block !important;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 100%;
+	/* Flex/grid children often need min-width:0 so AdSense can size to the real column width */
+	min-width: 0;
+	min-height: 0;
+	height: auto;
+	text-align: center !important;
+}
+
+@media screen and (max-width: 782px) {
+	ul.infinite-content > li.vdn-home-feed-ad,
+	ul.infinite-content > li.vdn-home-feed-ad.vdn-home-feed-ad--col,
+	ul.infinite-content > li.vdn-home-feed-ad.vdn-home-feed-ad--row {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
+	/* Avoid theme `overflow:hidden` stacking contexts clipping iframe ads in the More News rail */
+	body.home #mvp-main-body-wrap ul.infinite-content {
+		overflow: visible !important;
+		position: relative;
+		z-index: 1;
+	}
+}

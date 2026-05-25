@@ -32,9 +32,17 @@ get_header();
 							// posts populate $do_not_duplicate, loops use WP_Query and global $wp_query stays the
 							// static front page—so $wp_query->max_num_pages is wrong (often 1) and no nav links render.
 							$mvp_home_blog_max_pages = null;
+							// VDN home-feed AdSense inserts: inc/vdn-customize-home-feed-ads.php (Customizer).
+							// Theme infinite-scroll AJAX appends posts without re-running PHP here; ad rows follow
+							// the first server-rendered batch only unless extended in JS later.
 							?>
 							<?php if(get_option('mvp_blog_layout') == '1' ) { ?>
 								<ul class="mvp-blog-story-list-col left relative infinite-content">
+									<?php
+									if ( function_exists( 'vdn_home_feed_reset_story_counter' ) ) {
+										vdn_home_feed_reset_story_counter();
+									}
+									?>
 									<?php global $do_not_duplicate; if (isset($do_not_duplicate)) { ?>
 										<?php global $post; $mvp_posts_num = esc_html(get_option('mvp_posts_num')); $paged = (get_query_var('page')) ? get_query_var('page') : 1; $home_col_query1 = new WP_Query(array( 'posts_per_page' => $mvp_posts_num, 'post__not_in'=>$do_not_duplicate, 'paged' =>$paged )); if ($home_col_query1->have_posts()) : while ($home_col_query1->have_posts()) : $home_col_query1->the_post(); ?>
 											<li class="mvp-blog-story-col left relative infinite-post">
@@ -83,6 +91,7 @@ get_header();
 												<?php } ?>
 												</a>
 											</li><!--mvp-blog-story-wrap-->
+											<?php if ( function_exists( 'vdn_home_feed_maybe_render_ad_li' ) ) { vdn_home_feed_maybe_render_ad_li( 'col' ); } ?>
 										<?php endwhile; endif; $mvp_home_blog_max_pages = $home_col_query1->max_num_pages; wp_reset_postdata(); ?>
 									<?php } else { ?>
 										<?php $mvp_posts_num = esc_html(get_option('mvp_posts_num')); $paged = (get_query_var('page')) ? get_query_var('page') : 1; query_posts(array( 'posts_per_page' => $mvp_posts_num, 'paged' =>$paged )); if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -132,11 +141,17 @@ get_header();
 												<?php } ?>
 												</a>
 											</li><!--mvp-blog-story-wrap-->
+											<?php if ( function_exists( 'vdn_home_feed_maybe_render_ad_li' ) ) { vdn_home_feed_maybe_render_ad_li( 'col' ); } ?>
 										<?php endwhile; endif; $mvp_home_blog_max_pages = $wp_query->max_num_pages; wp_reset_query(); ?>
 									<?php } ?>
 								</ul>
 							<?php } else { ?>
 								<ul class="mvp-blog-story-list left relative infinite-content">
+								<?php
+								if ( function_exists( 'vdn_home_feed_reset_story_counter' ) ) {
+									vdn_home_feed_reset_story_counter();
+								}
+								?>
 								<?php global $do_not_duplicate; if (isset($do_not_duplicate)) { ?>
 									<?php $mvp_posts_num = esc_html(get_option('mvp_posts_num')); $paged = (get_query_var('page')) ? get_query_var('page') : 1; $home_row_query1 = new WP_Query(array( 'posts_per_page' => $mvp_posts_num, 'post__not_in'=>$do_not_duplicate, 'paged' =>$paged )); if ($home_row_query1->have_posts()) : while ($home_row_query1->have_posts()) : $home_row_query1->the_post(); ?>
 											<li class="mvp-blog-story-wrap left relative infinite-post">
@@ -185,6 +200,7 @@ get_header();
 												<?php } ?>
 												</a>
 											</li><!--mvp-blog-story-wrap-->
+											<?php if ( function_exists( 'vdn_home_feed_maybe_render_ad_li' ) ) { vdn_home_feed_maybe_render_ad_li( 'row' ); } ?>
 										<?php endwhile; endif; $mvp_home_blog_max_pages = $home_row_query1->max_num_pages; wp_reset_postdata(); ?>
 									<?php } else { ?>
 										<?php $mvp_posts_num = esc_html(get_option('mvp_posts_num')); $paged = (get_query_var('page')) ? get_query_var('page') : 1; query_posts(array( 'posts_per_page' => $mvp_posts_num, 'paged' =>$paged )); if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -234,6 +250,7 @@ get_header();
 												<?php } ?>
 												</a>
 											</li><!--mvp-blog-story-wrap-->
+											<?php if ( function_exists( 'vdn_home_feed_maybe_render_ad_li' ) ) { vdn_home_feed_maybe_render_ad_li( 'row' ); } ?>
 										<?php endwhile; endif; $mvp_home_blog_max_pages = $wp_query->max_num_pages; wp_reset_query(); ?>
 									<?php } ?>
 								</ul>

@@ -120,11 +120,23 @@ add_action(
 	}
 );
 
-require_once get_template_directory() . '/inc/block-patterns.php';
-require_once get_template_directory() . '/inc/trust-a11y.php';
-require_once get_template_directory() . '/inc/plugin-compat.php';
-require_once get_template_directory() . '/inc/home-sidebar-recent-sources.php';
-require_once get_template_directory() . '/inc/home-sidebar-recent-more.php';
+$vdn_inc_files = array(
+	'block-patterns.php',
+	'trust-a11y.php',
+	'plugin-compat.php',
+	'home-sidebar-recent-sources.php',
+	'home-sidebar-recent-more.php',
+);
+foreach ( $vdn_inc_files as $vdn_inc_file ) {
+	$vdn_inc_path = get_template_directory() . '/inc/' . $vdn_inc_file;
+	if ( is_readable( $vdn_inc_path ) ) {
+		require_once $vdn_inc_path;
+	}
+}
+
+if ( file_exists( get_stylesheet_directory() . '/inc/vdn-customize-home-feed-ads.php' ) ) {
+	require_once get_stylesheet_directory() . '/inc/vdn-customize-home-feed-ads.php';
+}
 
 // Load text domain function - defined early
 if ( ! function_exists( 'mvp_load_textdomain' ) ) {
