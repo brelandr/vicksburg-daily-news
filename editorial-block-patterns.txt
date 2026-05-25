@@ -1,0 +1,28 @@
+Editorial: Vicksburg Daily News theme helpers
+=============================================
+
+Block patterns
+--------------
+In the post or page editor: open the block inserter (+), then the **Patterns** tab.
+Category: **Vicksburg Daily News** (or search by name).
+
+1. **Article callout** — Short highlighted paragraph; use Group in the editor for a border/box.
+2. **Related links** — “Related” heading plus two link paragraphs you can edit.
+3. **Pull quote** — Quote block; add citation in block settings if needed.
+4. **Correction notice** — “Correction:” paragraph for updates to a story.
+5. **Key dates / timeline** — Heading plus three dated placeholder lines.
+6. **Staff / reporting box** — Heading + paragraph for byline notes, tips line, or methodology.
+
+Existing posts are unchanged until you insert a pattern.
+
+Transparency & accessibility (Appearance → Vicksburg Daily News Options)
+-----------------------------------------------------------------------
+Under **Editorial & Accessibility**:
+
+- **Show “Last updated” on posts** — When a story was saved after publish, a “Last updated” line appears above the article body (readers see it on the live site).
+- **Reading progress bar** — Optional thin bar at the very top while scrolling on posts.
+- **Corrections policy URL** / **Ethics and standards URL** — If filled in, links appear in the **footer** under the copyright for trust/transparency.
+
+Site-wide layout (header, homepage, etc.) still comes from the theme and Customizer, not from patterns.
+
+Optional: **Appearance → Editor** font tools (e.g. WordPress 7+ Font Library) for block typography.

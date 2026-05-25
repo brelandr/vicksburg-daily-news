@@ -1,0 +1,96 @@
+[25-Nov-2025 11:28:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php on line 1
+[26-Nov-2025 11:29:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php on line 1
+[27-Nov-2025 11:29:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php on line 1
+[28-Nov-2025 11:30:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php on line 1
+[29-Nov-2025 11:29:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php on line 1
+[30-Nov-2025 11:28:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php on line 1
+[01-Dec-2025 11:29:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php on line 1
+[02-Dec-2025 11:28:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php on line 1
+[03-Dec-2025 11:29:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php on line 1
+[04-Dec-2025 11:28:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php on line 1
+[05-Dec-2025 11:29:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php on line 1
+[07-Dec-2025 11:28:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php on line 1
+[08-Dec-2025 11:28:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php on line 1
+[09-Dec-2025 11:29:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php on line 1
+[09-Dec-2025 12:04:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php on line 1
+[10-Dec-2025 11:29:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php on line 1
+[11-Dec-2025 11:28:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php on line 1
+[12-Dec-2025 11:28:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php on line 1
+[13-Dec-2025 11:38:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php on line 1
+[14-Dec-2025 11:28:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php on line 1
+[15-Dec-2025 11:28:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php on line 1
+[16-Dec-2025 11:30:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php on line 1
+[17-Dec-2025 11:28:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php on line 1
+[18-Dec-2025 11:29:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/vicksburgnews/public_html/wp-content/themes/zox-news/index.php on line 1

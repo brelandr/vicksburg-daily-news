@@ -1,0 +1,39 @@
+Vicksburg Daily News — WordPress 7.0 / PHP 8.2+ staging checklist
+==================================================================
+Run this on a STAGING clone before production. (Theme code cannot perform these steps for you.)
+
+Environment
+-----------
+[ ] PHP 8.2 or 8.3; extensions matching production (imagick, mysqli, etc.)
+[ ] WordPress 7.0 (RC or final); database backup restored from production
+[ ] Same active plugins/theme as production (or-document differences)
+[ ] WP_DEBUG true on staging during test; WP_DEBUG_LOG reviewed after pass
+
+Smoke tests — front end (logged out)
+------------------------------------
+[ ] Home / front page layout, featured areas, ads if applicable
+[ ] Single post: content, images, embeds, social, related posts, author box
+[ ] Category / archive / tag pagination
+[ ] Search results
+[ ] Static pages (default, full-width, home template if used)
+[ ] 404 page
+[ ] Attachment page (image attachment)
+[ ] AMP single (if AMP option enabled)
+[ ] WooCommerce cart/checkout if used
+
+Admin & theme options
+---------------------
+[ ] Appearance > Vicksburg Daily News Options: open, change one field, save, reload, verify
+[ ] Customizer: preview and publish a trivial change (revert if needed)
+[ ] Create draft post: block inserter, wide/full alignment, embed, save preview
+[ ] Block patterns: Patterns > Vicksburg Daily News — insert each, preview, remove
+
+Plugins / editor
+----------------
+[ ] No fatals or whitescreen; check debug.log for deprecations after key flows
+[ ] If using metabox-heavy plugins: test post save and collaborative editing expectations (WP 7.0 may disable some features when legacy metaboxes are present)
+
+Sign-off
+--------
+[ ] Compare staging debug.log to baseline; address new theme/plugin deprecations
+[ ] Record date, WP version, PHP version, and tester initials

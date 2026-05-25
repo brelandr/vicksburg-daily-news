@@ -1,0 +1,88 @@
+/* Skip link: visible on keyboard focus */
+.mvp-skip-link.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.mvp-skip-link.screen-reader-text:focus {
+	background: #000;
+	clip: auto !important;
+	clip-path: none;
+	color: #fff;
+	display: block;
+	font-size: 1rem;
+	font-weight: 700;
+	height: auto;
+	left: 6px;
+	line-height: normal;
+	padding: 12px 18px;
+	text-decoration: none;
+	top: 6px;
+	width: auto;
+	z-index: 100000;
+}
+
+/* Keyboard focus on main interactive chrome */
+#mvp-site-main a:focus-visible,
+#mvp-site-main button:focus-visible,
+.mvp-fly-but-wrap:focus-visible,
+.mvp-search-click:focus-visible {
+	outline: 2px solid currentColor;
+	outline-offset: 2px;
+}
+
+.mvp-last-updated {
+	font-size: 0.9rem;
+	margin: 0 0 1rem;
+	color: #555;
+}
+
+.mvp-last-updated-label {
+	font-weight: 700;
+}
+
+/* Reading progress bar */
+.mvp-read-progress-track {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 3px;
+	z-index: 99999;
+	pointer-events: none;
+	background: transparent;
+}
+
+.mvp-read-progress-bar {
+	display: block;
+	height: 100%;
+	width: 0;
+	max-width: 100%;
+	background: #000;
+	transition: width 0.15s linear;
+}
+
+/* Footer trust links */
+.mvp-foot-trust {
+	margin: 0.75rem 0 0;
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+.mvp-foot-trust a {
+	margin: 0 0.5rem;
+	text-decoration: underline;
+}
+
+.mvp-foot-trust .mvp-foot-trust-sep {
+	margin: 0 0.35rem;
+	opacity: 0.5;
+}

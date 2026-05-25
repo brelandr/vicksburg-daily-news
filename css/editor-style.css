@@ -1,0 +1,112 @@
+/**
+ * Block editor only — mirrors #mvp-content-main reading typography from style.css.
+ * Does not load on the front end.
+ */
+
+/* Content width aligns with $content_width (740px) and theme.json layout.contentSize */
+.editor-styles-wrapper .block-editor-block-list__layout.is-root-container > .wp-block,
+.editor-styles-wrapper .is-root-container > .wp-block {
+	max-width: 740px;
+}
+
+.editor-styles-wrapper .block-editor-block-list__layout.is-root-container > .wp-block[data-align="wide"],
+.editor-styles-wrapper .is-root-container > .wp-block[data-align="wide"] {
+	max-width: 1200px;
+}
+
+.editor-styles-wrapper .block-editor-block-list__layout.is-root-container > .wp-block[data-align="full"],
+.editor-styles-wrapper .is-root-container > .wp-block[data-align="full"] {
+	max-width: none;
+}
+
+.editor-styles-wrapper,
+.editor-styles-wrapper .block-editor-block-list__layout {
+	font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	color: #000;
+}
+
+.editor-styles-wrapper .wp-block-paragraph,
+.editor-styles-wrapper p {
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.55;
+}
+
+.editor-styles-wrapper .wp-block-heading h1,
+.editor-styles-wrapper h1.wp-block-heading {
+	font-size: 2rem;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	line-height: 1.4;
+}
+
+.editor-styles-wrapper .wp-block-heading h2,
+.editor-styles-wrapper h2.wp-block-heading {
+	font-size: 1.8rem;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	line-height: 1.4;
+}
+
+.editor-styles-wrapper .wp-block-heading h3,
+.editor-styles-wrapper h3.wp-block-heading {
+	font-size: 1.6rem;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	line-height: 1.4;
+}
+
+.editor-styles-wrapper .wp-block-heading h4,
+.editor-styles-wrapper h4.wp-block-heading {
+	font-size: 1.4rem;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	line-height: 1.4;
+}
+
+.editor-styles-wrapper .wp-block-heading h5,
+.editor-styles-wrapper h5.wp-block-heading {
+	font-size: 1.2rem;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	line-height: 1.4;
+}
+
+.editor-styles-wrapper .wp-block-heading h6,
+.editor-styles-wrapper h6.wp-block-heading {
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	line-height: 1.4;
+}
+
+.editor-styles-wrapper .wp-block-quote,
+.editor-styles-wrapper blockquote {
+	border-left: 3px solid #000;
+	padding-left: 1rem;
+}
+
+.editor-styles-wrapper .wp-block-quote p,
+.editor-styles-wrapper blockquote p {
+	font-size: 1.9rem;
+	font-weight: 700;
+	line-height: 1.1;
+}
+
+.editor-styles-wrapper .wp-block-quote cite,
+.editor-styles-wrapper blockquote cite {
+	color: #555;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.editor-styles-wrapper .wp-block-list li {
+	margin-left: 0.5rem;
+	padding: 0.25rem 0;
+}
+
+.editor-styles-wrapper a {
+	color: #000;
+	text-decoration: underline;
+	text-underline-offset: 0.15em;
+}
